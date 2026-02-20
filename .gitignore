@@ -1,3 +1,4 @@
 .vscode
 target
 main
+*.DS_*

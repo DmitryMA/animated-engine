@@ -16,13 +16,36 @@ fn main() {
 
     // println!("{x}");
 
-    fn getFive() -> u8 {
+    fn get_five() -> u8 {
         22;
         255;
         33
     }
 
-    println!("{}", getFive());
+    println!("{}", get_five());
 
-    let x = 5;
+    let x: i32 = 5;
+
+    if x == 3 {
+        println!("{x} ==> 3");
+    } else {
+        println!("{x} ==> 5");
+    }
+
+    let nums: [u8; 4] = [10, 20, 30, 40];
+
+    let mut idx: usize = 0;
+
+    while idx < nums.len() {
+        println!("{}", nums[idx]);
+        idx += 1;
+    }
+
+    // for num in nums {
+    //     println!("{}", num * 10);
+    // }
+
+    for num in 1..4 {
+        println!("last: {}", num);
+    }
 }

@@ -48,4 +48,16 @@ fn main() {
     for num in 1..4 {
         println!("last: {}", num);
     }
+
+    let s1 = "Hello";
+    let s2 = s1;
+    let is_equal = s1 == s2;
+    println!("{s2}{s1}{is_equal}");
+
+    let s3 = String::from("Hello World!");
+    let s4 = s3.clone();
+
+    let is_equal = s3 == s4;
+
+    println!("{is_equal}");
 }

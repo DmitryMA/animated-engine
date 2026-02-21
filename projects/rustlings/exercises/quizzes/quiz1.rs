@@ -14,6 +14,11 @@
 
 fn main() {
     // You can optionally experiment here.
+    // println!("{}", calculate_price_of_apples(40));
+}
+
+fn calculate_price_of_apples(apples: u32) -> u32 {
+    if apples <= 40 { apples * 2 } else { apples }
 }
 
 // Don't change the tests!

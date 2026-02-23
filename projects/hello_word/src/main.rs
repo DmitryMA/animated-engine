@@ -49,7 +49,7 @@ fn main() {
         println!("last: {}", num);
     }
 
-    let s1 = "Hello";
+    let s1: &str = "Hello";
     let s2 = s1;
     let is_equal = s1 == s2;
     println!("{s2}{s1}{is_equal}");
@@ -60,4 +60,17 @@ fn main() {
     let is_equal = s3 == s4;
 
     println!("{is_equal}");
+
+    let s1 = String::from("Hi");
+    let s2 = String::from("Hi");
+
+    println!("{}", s1 == s2);
+
+    check_usage(s1);
+
+    println!("{} after check_usage", s1);
+}
+
+fn check_usage(s: String) {
+    println!("{s} in check_usage");
 }
